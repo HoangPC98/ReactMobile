@@ -1,0 +1,97 @@
+:root{
+    --primary-color:rgb(255, 88, 46);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333; 
+    --header-height: 120px;
+    --navbar-height: 45px;
+    --searchpn-height: 75px;
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+    line-height: 1,6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    min-width: 90px;
+    min-height: 33px;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 2px;
+    color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+
+
+li{
+    list-style: none;
+    padding: 6px 2px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+ul{
+    padding:0;
+    margin: 0;
+}
+/* :hoverr các items li*/
+
+li:hover,.item-li:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.03);
+    
+}
+
+.title2{
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; 
+}
+
+
+
+@keyframes sileUpFaded {
+    from {
+        opacity: 1;
+        transform : scale(1)
+    }
+    to {
+        opacity: 0;
+        transform : scale(0)
+    }    
+}
+
+h5{
+    margin: 5px 9px;
+}
+
+b{
+    font-weight: 500;
+}

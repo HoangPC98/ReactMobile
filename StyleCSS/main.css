@@ -1,0 +1,102 @@
+
+.modal{
+    z-index: 2;
+}
+.auth-form{
+    width: 450px;
+}
+.auth-form__container{
+    margin: 0 20px ;  
+    display: flex;
+    flex-direction: column;  
+}
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color)
+}
+.auth-form__LoginText{
+
+}
+.auth-form__switch-btn{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.auth-form__body{
+
+}
+.auth-form__group{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 10px 0;
+}
+.auth-form__control{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.main-btn{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.transp-btn{
+    color: #000;
+    background-color: transparent;
+}
+
+.transp-btn:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.auth-form__policy{
+
+}
+.auth-form__footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.auth-form__input{
+    height: 33px;
+    font-size: 1rem;
+    padding: 0 10px;
+}
+
+.iagree{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.btn.btn-face{
+    padding: 2px 20px;
+    background-color: #1092f4;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btn.btn-gg{
+    padding: 2px 20px;
+    background-color:white;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+/* Validation */
+.validate-message{
+    font-size: 0.9rem;
+}
+
+
+
+  
+
+
+

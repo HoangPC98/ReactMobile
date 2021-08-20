@@ -1,0 +1,350 @@
+.container {
+    position: relative;
+    top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.category__hider{
+    display: none;  
+}
+
+.category{
+    margin: 5px 10px;
+}
+
+.category__auth{
+    background-color: rgb(248, 242, 243); 
+    /* margin-left: 15px; */
+    border: 1px solid rgba(0,0,0,0.5);
+}
+
+.product{
+    background-color: rgb(252, 252, 252); 
+    flex: 1;
+}
+
+.category__heading{
+    background-color: rgb(250, 248, 248); 
+    padding: 10px;
+    border-bottom: 1px solid rgb(0,0,0,0.1);
+}
+.category__item{
+    margin: 0 10px;
+    /* Định nghĩa 1 transistion(chuyển động) nhưng chưa chạy ngay khi ko làm gì */
+    transition: right linear 0.1s;
+}
+.highlight-icon{
+    display: inline-block;
+}
+.category__item:hover{
+    /* khi hover vào thì kích hoạt transistion của chính nó */
+    left: 4px;
+    color: var(--text-color);
+}
+.category-mobile-ul{
+    position: relative;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    overflow-x: auto;
+    padding-left: 0;
+}
+.category-mobile-li{
+    background-color: rgba(0,0,0,0.09);
+    padding: 8px 15px;
+    margin: 0 1px;
+    color: var(--text-color);
+    min-width: fit-content;
+}
+
+.highlight{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.product__filter{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fff;
+    height:fit-content;
+    justify-content: space-between;
+}
+.product__filter-f{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: fit-content;
+    background-color: #fff;
+}
+.btn-f{
+    margin: 1px 8px;
+}
+.product__filter-page{
+    position: relative;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px; 
+}
+
+.select-filter-price-ul{
+    display:block;
+    background-color: #fff;
+    border: 1px solid #888;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 40px;
+    display: none;
+}
+
+.page__control{
+    margin: 10px;
+}
+.page__btn-prev, .page__btn-next{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+.product__item{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.product__item-ul{  
+    
+}
+
+.product__item-li{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.product__item-li:hover{
+    background-color: unset;
+}
+
+.product__item-li-auth{
+    position: relative;
+    display: flex;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    font-size: 0.85rem;
+}
+.product__item-li-auth:hover{
+    margin-top: -5px;
+}
+
+.product__item-li-link{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.product__item-img{
+    width: 100%;
+    height: 219px;    
+}
+.product__item-addition{
+    background-color: rgb(255, 255, 255);
+    height: 25px;
+}
+
+.product__item-name,
+.product__item-price,
+.product__item-addition,
+.product__item-address{
+    padding: 3px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__item-name{
+    margin-top: 10px;
+    line-height: 1.1rem;
+    font-size: 0.98rem;
+}
+
+
+
+.far.fa-heart{
+    
+}
+.fa-star{
+    font-size: 0.69rem;
+    color: #ffce3d;
+    display: inline-block;
+    
+}
+.product__item-address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.product__item-address{
+    pointer-events: none;
+}
+.product__item-price--origin{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8rem;
+    text-decoration: line-through;
+}
+.product__item-price--saleoff{
+    color: var(--primary-color);
+    font-size: 0.98rem;
+}
+
+.product__item-like{
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    font-size: 0.69rem;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 70px;
+    height: 18px; 
+}
+.product__item-like::after{
+    position: absolute;
+    top: 18px;
+    content: "";
+    display:block;
+    border: 4px solid;
+    border-color: #913113 #913113 transparent transparent; 
+}
+
+.product__item-sale-percent{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #fbd434;
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.product__item-sale-percent::after{
+    position: absolute;
+    bottom: -5px;
+    content: "";
+    display:block;
+    border-style: solid;
+    border-width: 0 20px 5px;
+    border-color: #fbd434 #fbd434 transparent #fbd434; 
+}
+
+.product__page-control-bottom{
+    margin: 10px auto;
+    width: fit-content;
+}
+
+.page-item{
+    height: 35px;
+    width: 40px;
+    margin: 0 5px;
+    /* line-height: 35px;    */
+    text-align: center;
+}
+
+/* Sildebar */
+
+.slide-container{
+    position: relative;
+    top: 10px;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.slide-images{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-container:hover .nextto-img{
+    display: block;
+}
+
+.img-list-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: transform 0.8s;  
+}
+
+.slide-img{
+    width:  100%;
+    height: fit-content;
+}
+
+.nextto-img{
+    position: relative;
+    top: 190px;
+    margin: 0;
+    display: none;
+    z-index: 2;
+    /* animation: SlideFromRight 2s infinite; */
+}
+
+
+#next-img, #prev-img{
+    width: fit-content;
+    height: 60px;
+    /* display: none; */
+}
+#next-img{
+    position: absolute;
+    right: 0;
+}
+.img-list-item:hover{
+    /* transform: translateX(500px) */
+
+}
+#prev-img{
+    position: absolute;
+    left: 0;
+    /* animation: SlideFromRight 0.7s linear; */
+}
+
+.search-result{
+    height: 30px;
+    margin: 10px;
+    width: fit-content;
+    font-size: 1.2rem;
+}
+
+.search-result-inp{
+    font-weight: 500;
+}
+
+.hiden{
+    display: none;
+}
+
+.show{
+    display: block;
+}

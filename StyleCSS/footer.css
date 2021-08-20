@@ -1,0 +1,132 @@
+.footer{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 30px;
+    margin: 10px 0;
+    border-top: 1px solid #888;
+}
+.footer__column{
+    /* position: relative; */
+    /* display: flex;  */
+    text-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.footer__column-title{
+    position: absolute;
+   padding-top: 20px;
+}
+.footer__column-item{
+    position: relative;
+}
+
+.footer__column-item:hover{
+    background-color: transparent;
+}
+.footer__column-title{
+    position: relative;
+    margin: 3px 10px;
+}
+.footer__column-ul{
+    position: relative;
+    padding: 0 10px;
+    font-size: 0.95rem;
+}
+.contact-me{
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.lienhect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    line-height: 1.5rem;
+    font-size: 0.9rem !important;
+}
+
+.hotline-link{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+.hotline{
+    margin-right: 10px;
+}
+.method-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    width: 90%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.method{
+    /* margin: 5px 6px; */
+    display: flex;
+    flex-direction: column;
+    font-size: 0.69rem;
+}
+
+.bank-list{
+    width: 98%;
+    display: flex;
+    padding: 10px 8px;
+}
+
+.fas.fa-qrcode,
+.fas.fa-wallet,
+.far.fa-clock,
+.fas.fa-money-check-alt{
+    margin: 5px;
+    font-size: 27px;
+}
+
+.footer__4-col{
+    height: fit-content;
+}
+
+.footer__bottom{
+    position: relative;
+    width: 100%;
+    background-color: rgb(247, 96, 51);
+    font-size: 0.85rem;
+}
+
+.footer__bottom-1{
+
+    /* background-color: wheat; */
+    padding: 0 15px;
+    line-height: 1.2rem;
+}
+.lisence{
+    margin: 15px;
+    font-size: 0.8rem;
+}
+.inc-name{
+    margin: 18px;
+}
+.footer__bottom-2{
+
+    /* background-color: #998877; */
+    padding: 10px 30px;
+    line-height: 1.2rem;
+}
+.method:hover{
+    opacity: 0.9;
+}
+
+a.method{
+    color: var(--text-color)
+}
+

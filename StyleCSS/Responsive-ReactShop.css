@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+
+
+/* Mobile */
+@media screen and (max-width:739px){
+    .h-o-m{
+        display: none;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width:740) and (max-width:1024px){
+    .h-o-t{
+        display: none;
+    }
+}
+
+/* Mobile & Tablet */
+@media  screen and (max-width:1024px){
+    .h-o-m-t{
+        display: none;
+    }
+
+    .header{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 95px;
+        z-index: 100;
+        padding: 5px 0;
+    }
+    .container{
+        margin-top: var(--header-height);
+    }
+
+    .header__search-panel{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header__navbar-hider{
+        display: block;
+    }
+    .header__logo{
+        order:1;
+        margin-top: 0px;
+        padding: 0;
+    }
+    .header__cart{
+        order:2;
+        margin: 0;
+    }
+    .header__searchbar{
+        order:3;
+        margin: 0 0 3px 0;
+        margin: 12px 0;
+        height: 35px;
+    }
+
+    .cart-list {
+        /* position: fixed; */
+        left: 0;
+        top: var(--header-height);
+        width: 100%;
+        border: 1px solid rgba(0,0,0,0.1);
+        background-color: #fff;
+        box-shadow: -1px 1px #ddd;
+        cursor: default;
+        display: none;
+        z-index: 1;
+        padding: 0 30px;
+    }
+    .product__filter{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 95px;
+        z-index: 1;
+        height:fit-content;
+    }
+    .header.mode-m-t{
+        width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.3); background-image: none; z-index:10;
+    }
+    .header__navbar.h-o-m-t.mode-m-t{
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        display: block; 
+        background-color: var(--primary-color);
+        width: 60%; height: 100%; 
+        z-index:11
+    } 
+    .header__navbar-list.mode-m-t{
+        display: flex;
+        flex-direction: column;
+    }
+    .header__search-panel.mode-m-t{
+        /* display: none; */
+        /* padding: 0 5px; */
+    }
+  
+}
+
